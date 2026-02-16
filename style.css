@@ -1,0 +1,382 @@
+* {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+  }
+
+  nav {
+      height: 70px;
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 60px;
+  }
+
+  .logo {
+      height: 100%;
+      align-items: center;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .logo img {
+      height: 90%;
+  }
+
+  .menu {
+      height: 100%;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      color: white;
+  }
+
+  .menu ul {
+      display: flex;
+      width: 100%;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      font-size: 20px;
+  }
+
+  .menu ul li {
+      font-size: 25px;
+      position: relative;
+      cursor: pointer;
+  }
+
+  .menu ul li::after {
+      position: absolute;
+      content: "";
+      top: 102%;
+      left: 5px;
+      width: 10px;
+      height: 4px;
+      transition: all 1.5s ease-in-out;
+      background-color: red;
+  }
+
+  .menu ul li:hover::after {
+      width: 90%;
+  }
+
+  .icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+      width: 20%;
+  }
+
+  .icons i {
+      font-size: 25px;
+  }
+
+
+  /* Hero */
+  #hero {
+      width: 90%;
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+  }
+
+  #hero .left {
+      height: 100%;
+      width: 30%;
+      border-radius: 50%;
+      background-color: yellow;
+  }
+
+  .left img {
+      height: 100%;
+      border-radius: 50%;
+      border: 3px solid white;
+      width: 100%;
+  }
+
+  #hero .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      height: 100%;
+      width: 65%;
+      justify-content: center;
+      /* background-color: green; */
+  }
+
+  .info {
+      width: 90%;
+      height: 40%;
+      margin: auto;
+  }
+
+  .info h2 {
+      text-align: center;
+      font-size: 50px;
+      /* word-spacing: 20px; */
+  }
+
+  .info p {
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: 5px;
+  }
+
+  /* About */
+  #about {
+      color: white;
+      margin-top: 40px;
+  }
+
+  #about h2 {
+      text-align: center;
+      font-size: 40px;
+      color: crimson;
+  }
+
+  #about hr {
+      width: 70%;
+      height: 5px;
+      background: crimson;
+      border: none;
+      border-radius: 10px;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+
+  .aboutme {
+      width: 80%;
+      color: white;
+      margin: auto;
+  }
+
+  .aboutme p {
+      margin-top: 20px;
+      font-size: 18px;
+  }
+
+  .aboutme ul {
+      margin-top: 20px;
+      display: flex;
+      color: crimson;
+      justify-content: space-around;
+  }
+
+  .aboutme ul li {
+      font-size: 25px;
+      list-style-type: square;
+  }
+
+  .skills-outer hr {
+      width: 60%;
+      background-color: crimson;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: none;
+      outline: none;
+      height: 4px;
+      margin: 0 auto;
+
+  }
+
+  .skill-outer {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+  }
+
+  .skill-icons {
+      height: 150px;
+      /* background-color: coral; */
+      border: 2px solid red;
+      display: flex;
+      justify-content: center;
+  }
+
+  .skill-icons img {
+      height: 100%;
+  }
+
+  #my-service h2 {
+      text-align: center;
+      color: white;
+  }
+
+  #my-service hr {
+      width: 60%;
+      background-color: crimson;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: none;
+      outline: none;
+      height: 4px;
+      margin: 0 auto;
+  }
+
+  .Service-outer {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;
+
+  }
+
+  .Service {
+      border: 1px solid crimson;
+      margin-top: 20px;
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .Service p {
+      padding: 20px;
+      text-align: center;
+  }
+
+  #latest-project h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: red(214, 25, 25);
+  }
+
+  #latest-project hr {
+      width: 80%;
+      background-color: crimson;
+      border: none;
+      outline: none;
+      height: 4px;
+      margin: 0 auto;
+  }
+
+  #latest-project {
+      margin: 30px auto;
+      width: 80%;
+  }
+
+
+  .img {
+      width: 100%;
+      height: 100%;
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .img img {
+      width: 90%;
+      border: 1px solid red;
+      height: 100%;
+  }
+
+  #contact h2 {
+      text-align: center;
+      font-size: 55px;
+      color: white;
+  }
+
+  #contact hr {
+      width: 60%;
+      background-color: crimson;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: none;
+      outline: none;
+      height: 4px;
+      margin: 0 auto;
+  }
+
+  .contact-outer {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .left {
+      /* height: 400px; */
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .left h1 {
+      font-size: 40px;
+      text-align: center;
+  }
+
+  .left p {
+      margin-top: 5px;
+      font-size: 20px;
+      display: flex;
+      gap: 8px;
+  }
+
+  .right1 {
+      /* height: 400px; */
+      width: 45%;
+      /* background-color: green; */
+  }
+
+  .right1 form{
+    width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  }
+  .right1 form button{
+    width: 60%;
+    height: 100%;
+    color: crimson;
+  }
+
+  .right1 form input{
+    width: 60%;
+    height: 30px;
+    border: 1px solid gray;
+    outline: none;
+    padding-left: 10px;
+  }
+
+  .right1 form textarea{
+    width: 60%;
+    height: 150px;
+  }
+
+  footer {
+      margin-top: 40px;
+      width: 100%;
+      height: 80px;
+      background-color: yellow;
+  }
+
+  .footer-item {
+      height: 100%;
+      width: 80%;
+      background-color: blue;
+      margin: auto;
+  }
+
+
+  ::-webkit-scrollbar {
+      width: 0;
+  }
